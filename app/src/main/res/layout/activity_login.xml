@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mlmunozd.tfm.Login">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="2"
+        android:id="@+id/logoLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/previsualizacionImagenParteLayout"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/hacerFotoParteLayout">
+
+            <ImageView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_itramites"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds= "true"
+                android:maxHeight="200dp"
+                android:layout_alignParentTop="false"
+                android:nestedScrollingEnabled="false" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/logoLayout"
+        android:id="@+id/loadingLayout">
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBarLoadingLogin"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadingLayout"
+        android:layout_weight="2"
+        android:id="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/loginText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:ems="10"
+            android:hint="Usuario"
+            android:gravity="center"
+            android:textColorHint="#103184"
+            android:textColor="#103184"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/passText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_below="@+id/login"
+            android:layout_marginTop="5dp"
+            android:hint="Contraseña"
+            android:textColorHint="#103184"
+            android:textColor="#103184"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/axa_button"
+            android:layout_below="@+id/recuerdameSwitch"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recordar mis datos"
+                android:textColor="#103184"
+                android:textSize="15dp"
+                android:id="@+id/recuerdameSwitch"
+                android:layout_marginTop="5dp"
+                android:checked="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

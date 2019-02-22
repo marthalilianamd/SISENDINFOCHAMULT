@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mlmunozd.tfm.Login">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="2"
+        android:id="@+id/logoLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/previsualizacionImagenParteLayout"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/hacerFotoParteLayout">
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Envío de Mensajes SMS"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds= "true"
+                android:maxHeight="200dp"
+                android:layout_alignParentTop="false"
+                android:nestedScrollingEnabled="false" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/logoLayout"
+        android:id="@+id/loadingLayout">
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBarLoadingLogin"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadingLayout"
+        android:layout_weight="2"
+        android:id="@+id/linearLayout2">
+
+        <EditText
+            android:id="@+id/movilText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Número de celular"
+            android:inputType="textAutoComplete"
+            android:textColor="#103184"
+            android:textColorHint="#103184" />
+
+        <EditText
+            android:id="@+id/smsText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Escribe el mensaje aquí"
+            android:inputType="textMultiLine"
+            android:textColor="#103184"
+            android:textColorHint="#103184" />
+
+        <Button
+            android:id="@+id/sendSMSBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/axa_button"
+            android:text="Enviar"
+            android:textColor="@color/abc_primary_text_material_dark" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

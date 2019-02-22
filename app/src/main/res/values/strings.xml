@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Company</string>
+    <string name="permission_not_granted">Permiso no otorgado</string>
+    <string name="failure_permission">Permiso fallido</string>
+</resources>
