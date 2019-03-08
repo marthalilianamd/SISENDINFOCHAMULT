@@ -12,15 +12,12 @@
         android:layout_marginTop="60dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_weight="2"
         android:id="@+id/logoLayout">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/previsualizacionImagenParteLayout"
-            android:layout_alignParentTop="false"
-            android:layout_below="@+id/hacerFotoParteLayout">
+            android:id="@+id/previsualizacionImagenParteLayout">
 
             <TextView
 
@@ -60,7 +57,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/loadingLayout"
-        android:layout_weight="2"
+        android:focusableInTouchMode="true"
         android:id="@+id/linearLayout2">
 
         <EditText
@@ -71,7 +68,7 @@
             android:ems="10"
             android:gravity="center"
             android:hint="Número de celular"
-            android:inputType="textAutoComplete"
+            android:inputType="text|textNoSuggestions"
             android:textColor="#103184"
             android:textColorHint="#103184" />
 
@@ -79,13 +76,12 @@
             android:id="@+id/smsText"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/login"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
             android:ems="10"
             android:gravity="center"
+            android:inputType="textMultiLine|textNoSuggestions"
             android:hint="Escribe el mensaje aquí"
-            android:inputType="textMultiLine"
             android:textColor="#103184"
             android:textColorHint="#103184" />
 
@@ -100,7 +96,5 @@
             android:textColor="@color/abc_primary_text_material_dark" />
 
     </LinearLayout>
-
-
 
 </RelativeLayout>
